@@ -1,0 +1,301 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    min-width: 320px;
+}
+
+body {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    list-style-type: none;
+}
+
+section {
+    margin: 80px 0 80px 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.container-vertical {
+    flex-direction: column;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.red {
+    color: red;
+}
+
+/* HEADER */
+
+
+header {
+    width: 100vw;
+    height: 810px;
+    background: url('../img/fon.png') no-repeat center;
+    background-size: cover;
+}
+
+/* HEADER NAV START */
+
+.menu-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* MENU BTN START */
+
+#menu-btn {
+    display: none;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px;
+    border-radius: 5px;
+    display: none;
+}
+
+/* MENU BTN END */
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 43px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#nav-list {
+    display: flex;
+}
+
+#nav-list li {
+    padding-right: 33px;
+}
+
+#nav-list li:last-child {
+    padding-right: 0;
+}
+
+#nav-list li a {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+#nav-list li a:hover {
+    color: #ef8524;
+    transition: .2s;
+}
+
+/* HEADER NAV END */
+
+header #car-image {
+    margin-top: 80px;
+    width: 570px;
+}
+
+header h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: Oranienbaum, serif;
+    font-size: 146px;
+    padding-top: 6px;
+    letter-spacing: 18px;
+}
+
+.partner {
+    color: #fff;
+    font-size: 26px;
+}
+
+.links-to-store {
+    display: flex;
+    margin-top: 60px;
+}
+
+.links-to-store img:first-child {
+    margin-right: 25px;
+}
+
+.links-to-store img:last-child {
+    margin-left: 25px;
+}
+
+.phone-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.phone-block img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.phone-block a {
+    font-size: 28px;
+}
+
+/* HEADER END */
+
+/* BENEFITS START */
+#benefits .container {
+    justify-content: space-around;
+    text-align: center;
+}
+
+.benefit {
+    width: 300px;
+}
+
+.benefit i {
+    font-size: 4em;
+    color: #ef8524;
+}
+
+.benefit h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.benefit p {
+    margin-top: 20px;
+}
+/* BENEFITS END */
+
+/* JOIN US START */
+.varient {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.varient ul {
+    text-align: left;
+}
+
+.varient ul li {
+    list-style-type: disc;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.varient a {
+    padding: 10px 20px;
+    background-color: #ef8524;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+
+.varient a:hover {
+    background-color: rgb(232 116 9);
+    transition: .2s;
+}
+/* JOIN US END */
+
+/* FOOTER START */
+footer {
+    background-color: #ef8524;
+    padding-top: 60px;
+    margin-top: 0;
+    padding-bottom: 60px;
+}
+
+footer .container {
+    flex-direction: column;
+}
+
+footer h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+}
+
+.phone a {
+    font-size: 1.5em;
+    margin-left: 15px;
+}
+
+.socials {
+    margin-left: -15px;
+}
+
+.socials a {
+    font-size: 2.5em;
+    margin-right: 12px;
+}
+
+.socials a:hover,
+.phone a:hover,
+.docs a:hover {
+    color: rgb(220, 220, 220);
+    transition: .2s;
+}
+
+.socials a:last-child {
+    margin-right: 0;
+}
+
+.info {
+    width: 220px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.docs {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.docs a {
+    padding: 5px 0 5px 0;
+}
+
+.docs p:last-child {
+    margin-top: 10px;
+}
+
+/* FOOTER END */

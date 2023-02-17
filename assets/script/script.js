@@ -8,12 +8,16 @@ menu_btn.addEventListener('click', function() {
         menu.style.transform = 'translateY(0)';
         menu.style.transition = '.5s';
         menu_btn_icon.classList.remove('fa-bars');
-        menu_btn_icon.classList.add('fa-x')
+        menu_btn_icon.classList.add('fa-x');
+        document.body.setAttribute('scroll', 'no');
+        document.body.style.overflow = 'hidden';
     } else {
         this.setAttribute('closed', '');
         menu.style.transform = 'translateY(-100vh)';
         menu.style.transition = '.5s';
         menu_btn_icon.classList.remove('fa-x');
         menu_btn_icon.classList.add('fa-bars');
+        document.body.setAttribute('scroll', 'yes');
+        document.body.style.overflow = 'auto';
     }
 })

@@ -6,6 +6,7 @@
 
 html {
     min-width: 320px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -31,12 +32,20 @@ section {
     display: flex;
 }
 
+.reverse {
+    flex-direction: row-reverse;
+}
+
 .container-vertical {
     flex-direction: column;
 }
 
 .center {
     align-items: center;
+    justify-content: center;
+}
+
+.center-hor {
     justify-content: center;
 }
 
@@ -67,7 +76,6 @@ header {
     display: none;
     width: 20px;
     height: 2px;
-    margin-top: 5px;
     border-radius: 5px;
     display: none;
 }
@@ -96,16 +104,21 @@ nav {
     padding-right: 0;
 }
 
-#nav-list li a {
+nav li a {
     font-size: 14px;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
 }
 
 #nav-list li a:hover {
-    color: #ef8524;
+    color: #ffa509;
     transition: .2s;
+}
+
+.nav-link-active {
+    color: #ffa509;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ffa509;
 }
 
 /* HEADER NAV END */
@@ -173,7 +186,7 @@ header h1 {
 
 .benefit i {
     font-size: 4em;
-    color: #ef8524;
+    color: #ffa509;
 }
 
 .benefit h3 {
@@ -213,21 +226,161 @@ h2 {
 
 .varient a {
     padding: 10px 20px;
-    background-color: #ef8524;
+    background-color: #ffa509;
     border-radius: 5px;
     font-size: 1.2em;
     margin-top: 30px;
 }
 
 .varient a:hover {
-    background-color: rgb(232 116 9);
-    transition: .2s;
+    background-color: #e69508;
+    transition: .3s;
 }
 /* JOIN US END */
 
+/* LICA START */
+#lica h2 {
+    text-align: center;
+    font-size: 34px;
+}
+
+#lica .container {
+    margin-top: 70px;
+}
+
+.lica-block {
+    width: 50%;
+}
+
+.lica-block h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.lica-block ul li {
+    list-style-type: disc;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.lica-img {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lica-img i {
+    font-size: 200px;
+    color: #ffa509;
+}
+
+#lica .container:nth-child(3) {
+    justify-content: end;
+}
+
+/* START SECTION START */
+
+.start {
+    justify-content: space-between;
+}
+
+.container.start {
+    align-items: start;
+}
+
+.start-work, .faq {
+    margin: 60px 0 60px 0;
+}
+
+.start-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.start-item p.step {
+    font-weight: bold;
+    font-size: 26px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffa509;
+    border-radius: 50%;
+    color: #333;
+    transition: .6s;
+}
+
+.start-item:hover {
+    cursor: pointer;
+}
+
+.start-item:hover p.step {
+    transform: translateY(-12px);
+    transition: .6s;
+}
+
+.start-item p.description {
+    margin-top: 20px;
+    width: 250px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* START SECTION END */
+
+/* FAQ START */
+.faq-item {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.faq-item .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.faq-item .header:hover {
+    cursor: pointer;
+}
+
+.faq-item .header p.icon {
+    color: #ffa509;
+    font-size: 18px;
+}
+
+.faq-item p.question {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.faq-item p.answer {
+    line-height: 1.7;
+    display: none;
+}
+
+.faq-item .separator {
+    height: 1px;
+    width: 100%;
+    background-color: lightgrey;
+    margin: 20px 0;
+}
+
+/* FAQ END */
+
+/* FIZ-LICA END */
+
 /* FOOTER START */
 footer {
-    background-color: #ef8524;
+    background-color: #222;
     padding-top: 60px;
     margin-top: 0;
     padding-bottom: 60px;
@@ -270,8 +423,8 @@ footer h2 {
 .socials a:hover,
 .phone a:hover,
 .docs a:hover {
-    color: rgb(220, 220, 220);
-    transition: .2s;
+    color: #ffa509;
+    transition: .35s;
 }
 
 .socials a:last-child {
@@ -299,3 +452,7 @@ footer h2 {
 }
 
 /* FOOTER END */
+
+
+
+/*  OLD COLOR: #ef8524  */

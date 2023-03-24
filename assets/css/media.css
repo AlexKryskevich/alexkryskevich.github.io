@@ -20,6 +20,45 @@
 }
 
 @media (max-width: 992px) {
+    /* HEADER START */
+    /* MENU BTN START */
+    
+    #menu-btn {
+        display: inline;
+        position: absolute;
+        top: 66px;
+        right: 30px;
+        z-index: 2;
+    }
+
+    #menu-btn i {
+        font-size: 20px;
+        color: #fff;
+    }
+    /* MENU BTN END */
+
+    #nav-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        overflow: hidden;
+        z-index: 1;
+        transform: translateY(-100vh);
+    }
+
+    #nav-list li {
+        padding-right: 0;
+        height: 50px;
+    }
+    /* HEADER END */
+
+
     /* BENEFITS START */
     .benefit {
         width: 200px;
@@ -60,42 +99,6 @@
     header h1 {
         font-size: 20vw;
         margin-left: 25px;
-    }
-
-    /* MENU BTN START */
-    
-    #menu-btn {
-        display: inline;
-        position: absolute;
-        top: 66px;
-        right: 30px;
-        z-index: 2;
-    }
-
-    #menu-btn i {
-        font-size: 20px;
-        color: #fff;
-    }
-    /* MENU BTN END */
-
-    #nav-list {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: #000;
-        overflow: hidden;
-        z-index: 1;
-        transform: translateY(-100vh);
-    }
-
-    #nav-list li {
-        padding-right: 0;
-        height: 50px;
     }
 
     .partner {

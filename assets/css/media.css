@@ -17,6 +17,17 @@
         width: 45%;
     }
     /* JOIN US END */
+
+    /* LICA START */
+    #lica .container-vertical .container {
+        justify-content: space-evenly;
+    }
+
+    .lica-block, .lica-img {
+        width: 45%;
+    }
+
+    /* LICA END */
 }
 
 @media (max-width: 992px) {
@@ -74,6 +85,12 @@
         width: 40%;
     }
     /* JOIN US END */
+
+    /* LICA START */
+    .start-work .container {
+        flex-wrap: wrap;
+    }
+    /* LICA END */
 }
 
 @media (max-width: 768px) {
@@ -142,6 +159,25 @@
         margin-bottom: 50px;
     }
     /* JOIN US END */
+
+    /* LICA START */
+    #lica h2 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .lica-img {
+        display: none;
+    }
+
+    .lica-block {
+        width: 90%;
+    }
+
+    #lica .faq h2 {
+        margin-bottom: 30px;
+    }
+    /* LICA END */
 
     /* FOOTER START */
     .wrapper {
